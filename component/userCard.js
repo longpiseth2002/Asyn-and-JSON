@@ -1,7 +1,11 @@
 const cardComponentDefaultImage =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png";
-const proFileComponent = (user) => {
-  return `
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png";
+
+
+
+
+const cardUsers = (user) => {
+    return `
 
 <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div class="flex justify-end px-4 pt-4">
@@ -27,11 +31,9 @@ const proFileComponent = (user) => {
         </div>
     </div>
     <div class="flex flex-col items-center pb-10">
-        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="${
-          user?.avatar_url || cardComponentDefaultImage
+        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="${user?.avatar_url || cardComponentDefaultImage
         }" alt="Bonnie image"/>
-        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">${
-          user?.login || "User Name"
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">${user?.login || "User Name"
         }</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
         <div class="flex mt-4 md:mt-6">
@@ -42,5 +44,4 @@ const proFileComponent = (user) => {
 </div>
 `;
 };
-
-export default proFileComponent;
+export default cardUsers;

@@ -1,9 +1,17 @@
 const cardComponentDefaultImage =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png";
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png";
 const defaultPrice = "0.00";
 const productName = "Product Name";
+
+
+
+
+
+
+
+
 const cardComponent = (product) => {
-  return `
+    return `
     <div
     class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
 >
